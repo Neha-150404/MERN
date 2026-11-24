@@ -1,23 +1,23 @@
 :root {
-    --bg: #f7f8fc;
+    --bg: #f8f9fd;
     --surface: #fff;
     --ink: #182033;
     --muted: #68728a;
-    --line: #e4e8f1;
-    --accent: #6257e8;
-    --soft: #eeedff;
-    --shadow: 0 16px 45px #252b5012
+    --line: #e8ecf4;
+    --accent: #8b5cf6;
+    --soft: #f5f3ff;
+    --shadow: 0 16px 45px rgba(139, 92, 246, 0.12)
 }
 
 body.dark {
-    --bg: #111421;
-    --surface: #191e2e;
+    --bg: #0f111a;
+    --surface: #171a26;
     --ink: #f1f3fb;
     --muted: #a4abc0;
-    --line: #2b3246;
-    --accent: #a39cff;
-    --soft: #292747;
-    --shadow: 0 16px 45px #0004;
+    --line: #292e42;
+    --accent: #f472b6;
+    --soft: #2f1738;
+    --shadow: 0 16px 45px #0006;
     color-scheme: dark
 }
 
@@ -257,7 +257,7 @@ h1 span {
     place-items: center;
     border: 1px solid var(--line);
     border-radius: 35% 35% 22px 22px;
-    background: linear-gradient(145deg, #d9d7ff, #f1eaff 55%, #c7e9ef);
+    background: linear-gradient(145deg, #fce7f3, #f5f3ff 55%, #e0e7ff);
     box-shadow: var(--shadow)
 }
 
@@ -266,9 +266,9 @@ h1 span {
     width: 140px;
     height: 140px;
     place-items: center;
-    border: 9px solid #ffffff88;
+    border: 9px solid #ffffffaa;
     border-radius: 50%;
-    background: linear-gradient(135deg, #6257e8, #958df5);
+    background: linear-gradient(135deg, #ec4899, #8b5cf6);
     color: white;
     font-size: 2.8rem;
     font-weight: 850

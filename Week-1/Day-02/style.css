@@ -5,12 +5,12 @@
 }
 
 body {
-    background: linear-gradient(135deg, #0f172a, #111827, #1f2937);
+    background: linear-gradient(135deg, #090d16, #16122c, #1f1d36);
     color: #f8fafc;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     font-style: normal;
+    min-height: 100vh;
 }
 
 header.navbar {
@@ -18,40 +18,52 @@ header.navbar {
     margin: 0 auto;
     padding: 24px 30px;
     gap: 20px;
-    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+    border-bottom: 1px solid rgba(244, 114, 182, 0.2);
     position: sticky;
     top: 0;
-    backdrop-filter: blur(8px);
-    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    background: rgba(15, 17, 34, 0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .profile h1 {
-    font-size: clamp(1.8rem, 2vw, 2.5rem);
-    letter-spacing: 1px;
-    color: #facc15;
+    font-size: clamp(1.8rem, 2vw, 2.4rem);
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #f472b6, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
 
 .profile img {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #f8fafc;
-    box-shadow: 0 8px 20px rgba(250, 204, 21, 0.3);
+    border: 2px solid #f472b6;
+    box-shadow: 0 8px 22px rgba(244, 114, 182, 0.35);
 }
 
 .nav a {
     color: #e2e8f0;
     text-decoration: none;
     font-size: 1rem;
-    padding: 8px 12px;
+    padding: 8px 14px;
     border-radius: 999px;
     transition: 0.3s ease;
 }
 
 .nav a:hover {
-    background: rgba(250, 204, 21, 0.15);
-    color: #facc15;
+    background: rgba(244, 114, 182, 0.18);
+    color: #f472b6;
 }
 
 main {
@@ -62,23 +74,26 @@ main {
 
 section,
 article {
-    background: rgba(15, 23, 42, 0.8);
-    border: 1px solid rgba(148, 163, 184, 0.18);
+    background: rgba(22, 24, 46, 0.75);
+    border: 1px solid rgba(244, 114, 182, 0.16);
     border-radius: 20px;
     padding: 28px 30px;
     margin-bottom: 24px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
 }
 
 h2 {
-    font-size: clamp(1.7rem, 2vw, 2.3rem);
+    font-size: clamp(1.6rem, 2vw, 2.1rem);
     margin-bottom: 16px;
     color: #f8fafc;
+    font-weight: 600;
 }
 
 p {
     font-size: 1.05rem;
     color: #cbd5e1;
+    line-height: 1.6;
 }
 
 #skills ul {
@@ -90,36 +105,39 @@ p {
 }
 
 #skills li {
-    background: linear-gradient(135deg, rgba(34, 197, 94, 0.18), rgba(59, 130, 246, 0.18));
-    border: 1px solid rgba(96, 165, 250, 0.28);
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.16), rgba(168, 85, 247, 0.2));
+    border: 1px solid rgba(244, 114, 182, 0.3);
     padding: 14px 16px;
     border-radius: 12px;
     text-align: center;
     color: #f8fafc;
     font-weight: 500;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 #skills li:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(59, 130, 246, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(236, 72, 153, 0.3);
+    border-color: rgba(244, 114, 182, 0.6);
 }
 
 #projects p,
 #contact p,
 #contact a {
-    color: #dbeafe;
+    color: #e2e8f0;
 }
 
 #contact a {
     display: inline-block;
     margin-top: 8px;
     text-decoration: none;
-    color: #facc15;
+    color: #f472b6;
     font-weight: 600;
+    transition: color 0.2s ease;
 }
 
 #contact a:hover {
+    color: #c084fc;
     text-decoration: underline;
 }
 
@@ -129,4 +147,3 @@ footer {
     color: #94a3b8;
     font-size: 0.95rem;
 }
-
